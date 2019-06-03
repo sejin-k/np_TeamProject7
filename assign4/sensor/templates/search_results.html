@@ -1,0 +1,19 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--</html>-->
+<h1>Search Results</h1>
+
+<ul>
+  {% for distance in object_list %}
+    <li>
+      ultrasonic sensor detect = {{ distance.pub_date }}, distance: {{ distance.distance}}cm
+    </li>
+  {% endfor %}
+</ul>
